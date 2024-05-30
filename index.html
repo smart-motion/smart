@@ -85,47 +85,30 @@
     </div>
   </div>
 </section>
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div>
-  </div>
-</section>
-
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-steve">
-          <img src="./static/sota_results/5e3eab58a6df9402_sim_sota.gif" alt="steve">
+          <img src="./static/sota_results/5e3eab58a6df9402_sim_sota.gif" alt="steve" width="300" height="200">
         </div>
         <div class="item item-chair-tp">
-          <img src="./static/sota_results/68f9bdd777a8dcfe_sim_sota.gif" alt="chair-tp">
+          <img src="./static/sota_results/68f9bdd777a8dcfe_sim_sota.gif" alt="chair-tp" width="300" height="200">
         </div>
         <div class="item item-shiba">
-          <img src="./static/sota_results/366a9c2a6c8bc2ec_sim_sota.gif" alt="shiba">
+          <img src="./static/sota_results/366a9c2a6c8bc2ec_sim_sota.gif" alt="shiba" width="300" height="200">
         </div>
         <div class="item item-fullbody">
-          <img src="./static/sota_results/550fb9aba453daca_sim_sota.gif" alt="fullbody">
+          <img src="./static/sota_results/550fb9aba453daca_sim_sota.gif" alt="fullbody" width="300" height="200">
         </div>
         <div class="item item-blueshirt">
-          <img src="./static/sota_results/6350c7915446faa7_sim_sota.gif" alt="blueshirt">
+          <img src="./static/sota_results/6350c7915446faa7_sim_sota.gif" alt="blueshirt" width="300" height="200">
         </div>
         <div class="item item-mask">
-          <img src="./static/sota_results/bb3cc9253abc3352_sim_sota.gif" alt="mask">
+          <img src="./static/sota_results/bb3cc9253abc3352_sim_sota.gif" alt="mask" width="300" height="200">
         </div>
         <div class="item item-coffee">
-          <img src="./static/sota_results/d401b4bec2f34e62_sim_sota.gif" alt="coffee">
+          <img src="./static/sota_results/d401b4bec2f34e62_sim_sota.gif" alt="coffee" width="300" height="200">
         </div>
       </div>
     </div>
@@ -180,27 +163,23 @@
 
   </div>
 </section>
-
 </span>
 <section class="section">
   <div class="container is-max-desktop">
-
     <div class="columns is-centered">
-
       <!-- Zero-shot Generalization. -->
       <div class="column">
-        <div class="content">
+        <div class="content" style="height: 100%;">
           <h2 class="title is-3">Zero-shot Generalization</h2>
           <p>
-            In the field of driving motion generation, we have pioneered a focus on the model’s zero-shot generalizability
-            across different datasets. Notably, the model trained solely on the NuPlan dataset performed well
-            on the WOMD test dataset, despite the lack of overlap between the map areas of these two datasets.
-            An empirical validation of SMART models’ scalability emulates the appealing properties of large
-            fundamental models.a wall.
+            In driving motion generation, we have focused on the model’s zero-shot generalizability across datasets. 
+            SMART, trained solely on the NuPlan dataset, performed well on the WOMD test dataset, despite the non-overlapping
+            map areas. The following videos show SMART's performance, with scenarios nearly absent in NuPlan, highlighting 
+            its ability to generalize and perform in unseen conditions. This demonstrates SMART's robustness in generating 
+            realistic and diverse motion patterns in novel situations.
           </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/video/nuplan2waymo.mp4"
-                    type="video/mp4">
+          <video id="dollyzoom" autoplay controls muted loop playsinline style="width: 100%; height: auto;">
+            <source src="./static/video/nuplan2waymo.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -208,55 +187,22 @@
 
       <!-- Scenario Generalization. -->
       <div class="column">
-        <h2 class="title is-3">Scenario Generalization</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a motion generation model, SMART is capable of generalizing log scenarios to produce a multitude of simulation 
-              scenarios. The following videos demonstrate several examples of scenario generalization, 
-              showcasing the versatility and robustness of SMART in creating diverse and realistic driving environments.
-              These examples illustrate how SMART can effectively simulate various conditions and interactions,
-              enhancing the scope and reliability of autonomous driving simulations.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/video/scenario_generalization.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
+        <div class="content" style="height: 100%;">
+          <h2 class="title is-3">Scenario Generalization</h2>
+          <p>
+            As a motion generation model, SMART is capable of generalizing log scenarios to produce a multitude of simulation 
+            scenarios. The following videos demonstrate several examples of scenario generalization, 
+            showcasing the versatility and robustness of SMART in creating diverse and realistic driving environments.
+            These examples illustrate how SMART can effectively simulate various conditions and interactions,
+            enhancing the scope and reliability of autonomous driving simulations.
+          </p>
+          <video id="matting-video" controls playsinline style="width: 100%; height: auto;">
+            <source src="./static/video/scenario_generalization.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
+      <!--/ Scenario Generalization. -->
     </div>
-    <!--/ Scenario Generalization. -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Concurrent Work. -->
-
   </div>
 </section>
 
