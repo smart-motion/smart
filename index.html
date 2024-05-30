@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="SMART: Scalable Multi-agent Real-time Motion Generation via Next-token Prediction">
+  <meta name="description"
+        content="SMART: Scalable Multi-agent Real-time Motion Generation via Next-token Prediction">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SMART: Scalable Multi-agent Real-time Motion Generation via Next-token Prediction</title>
 
@@ -10,17 +11,25 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
     gtag('js', new Date());
+
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
@@ -29,34 +38,42 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
-
-  <style>
-    .carousel {
-      display: flex;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      scroll-snap-type: x mandatory;
-    }
-    .carousel .item {
-      flex: 0 0 auto;
-      scroll-snap-align: start;
-      margin-right: 10px;
-    }
-    .carousel .item img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-    }
-    .carousel-container {
-      width: 220px;
-      overflow: hidden;
-    }
-  </style>
 </head>
 <body>
+
 <section class="hero is-light is-small">
   <div class="hero-body">
-    <div class="container carousel-container">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <img src="./static/sota_results/5e3eab58a6df9402_sim_sota.gif" alt="steve" width="200" height="200">
+        </div>
+        <div class="item item-chair-tp">
+          <img src="./static/sota_results/68f9bdd777a8dcfe_sim_sota.gif" alt="chair-tp" width="200" height="200">
+        </div>
+        <div class="item item-shiba">
+          <img src="./static/sota_results/366a9c2a6c8bc2ec_sim_sota.gif" alt="shiba" width="200" height="200">
+        </div>
+        <div class="item item-fullbody">
+          <img src="./static/sota_results/550fb9aba453daca_sim_sota.gif" alt="fullbody" width="200" height="200">
+        </div>
+        <div class="item item-blueshirt">
+          <img src="./static/sota_results/6350c7915446faa7_sim_sota.gif" alt="blueshirt" width="200" height="200">
+        </div>
+        <div class="item item-mask">
+          <img src="./static/sota_results/bb3cc9253abc3352_sim_sota.gif" alt="mask" width="200" height="200">
+        </div>
+        <div class="item item-coffee">
+          <img src="./static/sota_results/d401b4bec2f34e62_sim_sota.gif" alt="coffee" width="200" height="200">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-steve">
           <img src="./static/sota_results/5e3eab58a6df9402_sim_sota.gif" alt="steve" width="200" height="200">
